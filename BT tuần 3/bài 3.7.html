@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3.7</title>
+    <style>
+        .cha{display: flex;
+            gap: 20px;
+            justify-content: center;}
+        .sp{border: 1px solid rgb(220,219,219);
+        padding: 15px;
+        width: 30%;
+        text-align: center;
+        color: rgb(95,94,94);}
+        .sp img{
+        width: 100%;
+        height: auto;}
+        .gach{
+        text-decoration: line-through;
+        color: rgb(208,209,210);
+}
+
+.do{
+    color: red;}
+
+/* Responsive */
+@media (max-width: 768px){
+    .cha{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp{width: 90%;}}
+
+</style>
+</head>
+<body>
+    <div class="cha">
+
+    <div class="sp">
+        <img src="ip6.jpg">
+        <p>Điện thoại Iphone 6 32GB VN/A (Vàng Đồng) - Hàng Chính Hãng</p>
+        <span>6.199.000 đ </span>
+        <span class="gach">8.990.000 đ</span>
+        <span class="do"> -31%</span>
+    </div>
+
+    <div class="sp">
+        <img src="samsungj2.jpg">
+        <p>Điện thoại Samsung Galaxy J2 Pro 2018 - Hàng Chính Hãng</p>
+        <span>2.360.000 đ </span>
+        <span class="gach">3.290.000 đ</span>
+        <span class="do"> -28%</span>
+    </div>
+
+    <div class="sp">
+        <img src="xiaomi2.jpg">
+        <p>Điện thoại Xiaomi Mi Mix 2 (Black) - Hàng Chính Hãng</p>
+        <span>7.290.000 đ </span>
+        <span class="gach">12.990.000 đ</span>
+        <span class="do"> -44%</span>
+    </div>
+
+</div>
+
+</body>
+</html>
