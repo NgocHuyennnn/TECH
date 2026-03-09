@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 32.1</title>
+    <style>
+        body{color: white;font-family: Arial;}
+        .cha{width: 90%; 
+            margin: auto;
+            background-color: rgb(32, 143, 113);
+            padding: 20px;
+            border: 1px solid white;}
+        .con{display: block;
+            margin-bottom: 10px;
+            justify-content: center;}
+        label{display: block;margin-bottom: 5px;}
+        input{width: 100%;}
+        
+        @media (min-width: 768px){
+            .cha{background-color: rgb(91, 8, 169);
+                width: 600px;}
+            .con{display: flex;
+                align-items: center;}
+            label{width: 120px;}
+            input{width: 400px;}}
+        @media (min-width: 1024px){
+            .cha{background-color: rgb(63, 71, 224);
+                width: 600px;
+                margin: auto;}}
+            
+
+
+    </style>
+</head>
+<body>
+    <div class="cha">
+        <form>
+        <div class="con">
+            <label>Họ tên</label>
+            <input type="text">
+        </div>
+        <div class="con">
+            <label>Ngày sinh</label>
+            <input type="date">
+        </div>
+        <div class="con">
+            <label>Email</label>
+            <input type="text">
+        </div>
+        <div class="con">
+            <label>Họ tên</label>
+            <input type="text">
+        </div>
+
+        <button class="con">Đăng ký</button>
+    </form>
+    </div>
+</body>
+</html>

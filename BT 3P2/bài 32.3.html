@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 32.3</title>
+    <style>
+        .cha{display: flex;
+            flex-direction: column;
+             width: 100%;
+            background-color: rgb(12, 159, 233);}
+            
+        .con{text-align: center;
+            padding: 15px;
+            color: rgb(5, 5, 63);
+            font-size: 20px;}
+        @media (min-width: 768px){
+            .cha{display: flex;
+                flex-direction: row;
+             
+            justify-content: space-evenly;}}
+        @media (min-width: 1024px){
+            .cha{display: flex;
+                flex-direction: row;
+             
+            justify-content: flex-end;}}
+       
+    
+    </style>
+</head>
+<body>
+    <div class="cha">
+        <div class="con">Home</div>
+        <div class="con">About</div>
+        <div class="con">Products</div>
+        <div class="con">Contact</div>
+    </div>
+    
+</body>
+</html>

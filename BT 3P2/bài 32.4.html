@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 32.4</title>
+    <style>
+        .cha{display: flex;
+            flex-direction: column;
+             width: 60%;
+            height: 600px;
+            text-align: center;
+            }
+        .do{background-color: rgb(228, 126, 10);
+            padding: 10px;}
+        .xanh{background-color: rgb(10, 159, 228);
+            padding: 25px;}
+        .vang{background-color: rgb(246, 246, 15);
+            padding: 10px;}
+        .hong{background-color: rgb(241, 20, 182);
+            padding: 10px;}
+        .la{background-color: rgb(115, 249, 108);
+            padding: 10px;}
+        .aside1{background-color: rgb(246, 246, 15);
+            padding: 10px;
+            display: none;}
+        @media (min-width: 768px){
+            .gopasi{display: flex;
+                    flex-direction: row;
+                    width: 100%;}
+            .vang{width: 50%;}
+            .hong{width: 50%;}
+        }
+        @media (min-width: 1024px){
+            .bacon{display: flex;
+                flex-direction: row;
+                width: 100%;}
+            .gopasi{width:25%}
+            .aside1{display: flex;width: 25%;padding: 25px;}
+            .hong{width: 100%;padding: 25px;}
+            .xanh{width: 50%;}
+            .vang{display: none;}
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cha">
+        <div class="do">Header</div>
+    <div class="bacon">
+        <div class="aside1">Aside 1</div>
+        <div class="xanh">Main Content</div>
+    <div class="gopasi">
+        <div class="vang">Aside 1</div>
+        <div class="hong">Aside 2</div>
+    </div>
+    </div>
+        <div class="la">Footer</div>
+    </div>
+</body>
+</html>
