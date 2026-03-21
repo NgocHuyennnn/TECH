@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2.3.1</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 200px;
+            border-bottom: 1px solid black;
+        }
+        div{margin-top: 15px;}
+        body{font-size: 20px;}
+        label{display: inline-block;width: 100px;}
+        .cach{margin-left: 60px;}
+        input{width: 150px;}
+    </style>
+    <script>
+        function lockytu(input) {
+            let value = input.value;
+            if (!["+","-","*","/"].includes(value)) {
+            input.value = "";}
+}
+    </script>
+</head>
+<body>
+
+    <!-- a -->
+    <div>
+        <label>a=</label> 
+        <input id="a" type="number">
+        
+    </div>
+
+    <!-- b -->
+    <div>
+        <label>b=</label> 
+        <input id="b" type="number">
+        
+    </div>
+
+    <!-- phép tính -->
+    <div>
+        <label>Phép tính</label> 
+        <input id="pheptinh" maxlength="1" oninput="lockytu(this)">
+        
+    </div>
+    <!-- kết quả -->
+    <div>
+        <label>Kết quả</label> 
+        <input id="ketqua" readonly>
+    </div>
+
+    <script>
+        function tinh() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    let dau = document.getElementById("pheptinh").value;
+
+    let kq = "";
+
+
+    if (dau === "+") {
+        kq = a + b;
+} 
+    else if (dau === "-") {
+        kq = a - b;
+} 
+    else if (dau === "*") {
+        kq = a * b;
+} 
+    else if (dau === "/") {
+        if (b === 0) {
+            kq = "Lỗi";
+    }   else {
+            kq = a / b;
+    }
+} 
+
+    document.getElementById("ketqua").value = kq;
+    
+}
+
+// Enter ở đâu cũng tính
+document.addEventListener("keydown", function(e) {
+    if (e.key == "Enter") {
+        tinh();
+    }
+});
+    </script>
+
+</body>
+</html>
