@@ -59,10 +59,23 @@
 
     let kq = "";
 
-    if (dau == "+") kq = a + b;
-    else if (dau == "-") kq = a - b;
-    else if (dau == "*") kq = a * b;
-    else if (dau == "/") kq = b != 0 ? a / b : "Lỗi";
+
+    if (dau === "+") {
+        kq = a + b;
+} 
+    else if (dau === "-") {
+        kq = a - b;
+} 
+    else if (dau === "*") {
+        kq = a * b;
+} 
+    else if (dau === "/") {
+        if (b === 0) {
+            kq = "Lỗi";
+    }   else {
+            kq = a / b;
+    }
+} 
 
     document.getElementById("ketqua").value = kq;
     
